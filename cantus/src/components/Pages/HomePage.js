@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Header from '../Header';
+import LoginButton from '../LoginButton';
+import LogoutButton from '../LogoutButton';
+import ProfilePage from './ProfilePage'
 
 function HomePage() {
   return (
@@ -9,6 +12,9 @@ function HomePage() {
          <div>
             <Header />
         </div>
+        <LoginButton />
+    <LogoutButton />
+    <ProfilePage />
       <Row className="justify-content-center mt-5">
         <Col md={8} className="text-center">
           <h1>Welcome to Cantus</h1>
