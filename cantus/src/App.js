@@ -6,7 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/Pages/HomePage';
 import MusicPage from './components/Pages/MusicPage';
-import MusicLibrary from './components/Pages/MusicLibrary';
+import MusicLibrary from './components/Pages/MusicLibrary.js';
 import SharedLayout from './components/SharedLayout';
 import Error from './components/Pages/Error';
 
@@ -23,8 +23,8 @@ function App() {
       <Routes>
         <Route path='/' element={<SharedLayout/>}>
         <Route index element={<HomePage />} />
-        <Route path='products' element={<MusicLibrary />} />
-        <Route path='products/:productId' element={<MusicPage />} />
+        <Route path='Music' element={<MusicPage />} />   
+        <Route path='Music/:MusicId' element={<MusicPage />} />
         <Route path='*' element={<Error/>}/>
         </Route>
       </Routes>
@@ -44,9 +44,7 @@ export default App;
  {!error && isLoading && <p>Loading... </p>}
  {!error && !isLoading && (
   
-   <LoginButton />
-    <LogoutButton />
-    <ProfilePage />
+  
   </>
  )}
    

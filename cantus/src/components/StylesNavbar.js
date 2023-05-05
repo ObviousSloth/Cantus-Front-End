@@ -8,10 +8,10 @@ const StyledNavbar = () => {
         <NavLink to='/'
     className={({ isActive }) => (isActive ? 'link active' : 'link')}
     >Home</NavLink>
-        <NavLink to='/about' className={({ isActive }) => (isActive ? 'link active' : 'link')}
-    >About</NavLink>
-        <NavLink to='/products' className={({ isActive }) => (isActive ? 'link active' : 'link')}
-    >Products</NavLink>
+        <NavLink to='/Music' className={({ isActive }) => (isActive ? 'link active' : 'link')}
+    >Music</NavLink>
+        <NavLink to='/Profile' className={({ isActive }) => (isActive ? 'link active' : 'link')}
+    >Profile</NavLink>
     </nav>
   )
 }
